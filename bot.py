@@ -32,19 +32,19 @@ async def cancel(event):
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**Piramida Tagger Bot**, Grup vəya kanaldaki demək olarki bütün üyeleri tag edə bilərəm ★\nDaha ətraflı məlumat üçün **/help**'i tıklayın.",
+  await event.reply("**Karma Tagger Bot**, Grup vəya kanaldaki demək olarki bütün üyeleri tag edə bilərəm ★\nDaha ətraflı məlumat üçün **/help**'i tıklayın.",
                     buttons=(
-                      [Button.url('🌟 Məni Qrupa əlavə et', 'https://t.me/PiramidaTagBot?startgroup=a'),
+                      [Button.url('🌟 Məni Qrupa əlavə et', 'https://t.me/KarmaTaggerBot?startgroup=a'),
                       Button.url('🇦🧑‍💻 Sahibim', 'https://t.me/Roxy_Boss')]
                     ),
                     link_preview=False
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Piramida Tag Bot  bot'un Kömək Menyusu**\n\nKomut: /all \n  Bu komutu, başqalarını bəhs etmək istədiyiniz mətinlə birlikdə istifadə edə bilərsiniz. \n`Meselen: /all Sabahınız xeyir!`  \nBu komutu yanıt olaraq istifadə edə bilərsiniz. hər hansə bir mesaj Bot, yanıtlanan ilətiyə istifadəçiləri etiketləyəcək.\n /tagadmin \nYalnız adminləri tag edəcəkdir. \n /tektag \nTək-tək tag edəcəkdir.\n/etag - emojilernen tag ele"
+  helptext = "**Karma Tag Bot  bot'un Kömək Menyusu**\n\nKomut: /all \n  Bu komutu, başqalarını bəhs etmək istədiyiniz mətinlə birlikdə istifadə edə bilərsiniz. \n`Meselen: /all Sabahınız xeyir!`  \nBu komutu yanıt olaraq istifadə edə bilərsiniz. hər hansə bir mesaj Bot, yanıtlanan ilətiyə istifadəçiləri etiketləyəcək.\n /tagadmin \nYalnız adminləri tag edəcəkdir. \n /tektag \nTək-tək tag edəcəkdir.\n/etag - emojilernen tag ele"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('🌟 Məni Qrupa əlavə et', 'https://t.me/PiramidaTagBot?startgroup=a'),
+                      [Button.url('🌟 Məni Qrupa əlavə et', 'https://t.me/KarmaTaggerBot?startgroup=a'),
                       Button.url('🧑‍💻 Sahibim', 'https://t.me/Roxy_Boss')]
                     ),
                     link_preview=False
